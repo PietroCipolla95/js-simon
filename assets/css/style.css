@@ -2,8 +2,14 @@
     margin-top: 10rem;
     margin-bottom: 5rem;
     font-size: 5rem;
+    transition: .8s;
 }
 
 #class {
     font-size: 10rem;
+}
+
+#hourglass:hover {
+    transform: scale(1.4);
+    filter: invert(1);
 }
