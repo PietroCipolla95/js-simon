@@ -17,7 +17,10 @@ let countdown = setInterval(function() {
     let minutes = Math.floor((timeRemaining % (1000 * 3600)) / (1000 * 60));
     let seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-    document.getElementById('hourglass').innerHTML = hours + ':' + minutes + ':' + seconds
+    document.getElementById('hourglass').innerHTML = 
+        hours.toLocaleString(undefined,{minimumIntegerDigits: 2}) + ':' 
+        + minutes.toLocaleString(undefined,{minimumIntegerDigits: 2}) + ':' 
+        + seconds.toLocaleString(undefined,{minimumIntegerDigits: 2})
 
     if (timeRemaining < 0) {
 
