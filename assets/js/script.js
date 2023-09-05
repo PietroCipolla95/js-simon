@@ -13,7 +13,7 @@ let countdown = setInterval(function() {
     let now = new Date().getTime();
     let timeRemaining = (countDate - now)
 
-    let hours = Math.floor((timeRemaining % (1000 * 3600 * 24)) / (1000 * 3600))
+    let hours = Math.floor((timeRemaining % (1000 * 3600 * 24)) / (1000 * 3600));
     let minutes = Math.floor((timeRemaining % (1000 * 3600)) / (1000 * 60));
     let seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
