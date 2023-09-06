@@ -6,7 +6,7 @@ Ogni secondo il nostro countdown dovrà scalare fino alle 9:30 di domani mattina
 
 */
 
-let countDate = new Date("September 6, 2023 09:30:00").getTime();
+let countDate = new Date("September 6, 2023 09:57:00").getTime();
 
 let countdown = setInterval(function() {
 
@@ -24,6 +24,8 @@ let countdown = setInterval(function() {
 
     if (timeRemaining < 0) {
 
+        clearInterval(countdown)
+        document.getElementById('hourglass').innerHTML = '00:00:00'
         document.getElementById('class').innerHTML = 'Class Time!'        
         
     }
